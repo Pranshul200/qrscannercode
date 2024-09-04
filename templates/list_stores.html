@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>List of Stores</title>
+</head>
+
+<body>
+    <h1>List of Stores</h1>
+    <ul>
+        {% for store in stores %}
+        <li><a href="{{ url_for('show_store', store_id=store.id) }}">{{ store.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

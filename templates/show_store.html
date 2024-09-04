@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ store.name }} Details</title>
+</head>
+
+<body>
+    <h1>{{ store.name }} Details</h1>
+    <p>Store ID: {{ store.store_id }}</p>
+    <p>Status: {{ store.status }}</p>
+    <!-- Add more details as needed -->
+    <a href="{{ url_for('list_stores') }}">Back to List</a>
+</body>
+
+</html>
